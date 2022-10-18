@@ -22,22 +22,23 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.png" style="background-color:rgb(100, 107, 128);" alt="maochen.org logo" /></a>
+					<a href="#" class="image avatar"><img src="images/avatar.png" style="background-color:#7d7894d3;" alt="maochen.org logo" /></a>
 					<h1>
 						Hello From <strong>Maochen</strong>.<br/>
-						Originated from <i class="fa-solid fa-location-dot"></i>&nbsp;<strong>Shanghai, China</strong><br/>
+						Originated from <i class="fa-solid fa-location-dot"></i>&nbsp;<strong>Shanghai, China</strong>.<br/>
 						A man seeking for unknown. <br />
 						Reach me at </strong>contact <i class="fa fa-at" style="font-size: small;"></i>
 									maochen <i class="fa-solid fa-circle-dot" style="font-size: small;"></i>
 									org<br/>
-						&nbsp;<i class="fa-solid fa-i-cursor"></i><br/>
+						&nbsp;
+						<i class="fa-solid fa-i-cursor"></i><br/>
 					</h1>
 				</div>
 			</header>
 
 		<!-- Main -->
 			<div id="main">
-				<a class=""><img src="images/header_green.png" style="width: 200px; height: 40px" alt="" /></a>
+				<img src="images/header_green.png" style="width: 200px; height: 40px;"  alt="Logo" />
 
 				<section id="right_header" style="padding-top: 0;border-top: 0ch;">
 					<header class="major">
@@ -65,7 +66,7 @@
 					<h2><i class="fa-brands fa-buromobelexperte"></i>&nbsp;&nbsp;Experience</h2>
 					<div class="row">
 						<article class="col-12">
-							<img src="images/logo/meta_logo.png" style="width: 200px;height: 40px; float: right"/>
+							<img src="images/logo/meta_logo.png" style="width: 200px;height: 40px; float: right; filter: grayscale(100%);"/>
 							<h3>Meta Inc.</h3>
 							2020 - Present<br/>
 							Sr. Machine Learning Engineer<br/>
@@ -73,14 +74,14 @@
 						</article>
 
 						<article class="col-12">
-							<img src="images/logo/ms_logo.png" style="width: 200px;height: 40px; float: right"/>
+							<img src="images/logo/ms_logo.png" style="width: 200px;height: 40px; float: right; filter: grayscale(100%);"/>
 							<h3>Microsoft</h3>
 							2017 - 2020<br/>
 			  			    Senior Engineer<br/>
 							<br/>
 						</article>
 						<article class="col-12">
-							<img src="images/logo/ipsoft_logo.png" style="width: 200px;height: 40px; float: right"/>
+							<img src="images/logo/ipsoft_logo.png" style="width: 200px;height: 40px; float: right; filter: grayscale(100%);"/>
 							<h3>IPsoft Inc.</h3>
 							2013 - 2016<br/>
 							Lead NLP R&D Engineer<br/>
@@ -88,7 +89,7 @@
 							<br/>
 						</article>
 						<article class="col-12">
-							<img src="images/logo/nyu_logo.png" style="width: 200px;height: 40px; float: right"/>
+							<img src="images/logo/nyu_logo.png" style="width: 200px;height: 40px; float: right; filter: grayscale(100%);"/>
 							<h3>NYU</h3>
 							2010 - 2013<br/>
 							M.Sc. in Computer Science<br/>
@@ -180,36 +181,47 @@
 				<section id="calendar">
 					<h2><i class="fa-brands fa-buromobelexperte"></i>&nbsp;&nbsp;Calendar</h2>
 					<div class="row">
-						<iframe style="width: 100%; height: 600px;"
-								src="https://www.google.com/calendar/embed?showTitle=0&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=g%40maochen.org&amp;color=%230D7813&amp;ctz=America%2FNew_York">
+						<iframe style="width: 100%; height: 600px;" frameborder="0" scrolling="no"
+								src="https://calendar.google.com/calendar/embed?wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTz=1&showCalendars=0&showTabs=0&showPrint=0&showDate=1&showNav=0&showTitle=0&src=Z0BtYW9jaGVuLm9yZw&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230083c6&color=%233F51B5&color=%234285F4">
 						</iframe>
 					</div>
 				</section>
 
-				<!-- <section id="touch">
+				<section id="touch">
 					<h2>Get In Touch</h2>
 					<p>Drop me an message</p>
 					<div class="row">
 						<div class="col-12 col-12-small">
-							<form method="post" action="#">
+							<form enctype="multipart/form-data" method="get" action="mailto:contact@maochen.org">
 								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-									<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									<div class="col-6 col-12-xsmall"><input type="text" name="subject" id="name" placeholder="Name" required /></div>
+									<div class="col-6 col-12-xsmall"><input type="email" name="cc" id="email" placeholder="Email (Optional)" /></div>
+									<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required ></textarea></div>
+									<div class="col-12">
+										<button type="submit" class="button primary"><i class="fa-regular fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
+										<button type="reset" class="button">Clear</button>
+									</div>
+
+
 								</div>
 							</form>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
 						</div>
 					</div>
-				</section> -->
-				<section id="back_top">
+				</section>
+
+				<section id="back_top" style="padding-top: 1em;">
 					<div class="row">
-						<a class="button" href="#top">
-							<i class="fa fa-upload" aria-hidden="true"></i>&nbsp;
-							Back To Top
-						</a>
+						<div class="col-6">
+							<a class="button" href="#top">
+								<i class="fa fa-upload" aria-hidden="true"></i>&nbsp;&nbsp;Back To Top
+							</a>
+						</div>
+
+						<div class="col-6" style="text-align: right;vertical-align:middle;font-size:13pt;">
+							<a style="color: green;"><i class="fa-solid fa-shield"></i>&nbsp;&nbsp;Verified by Let's Encrypt</a>
+							&nbsp;|&nbsp;
+							<a style="color: grey;" href="https://html5up.net/strata" target="_blank"><i class="fa-regular fa-infinity"></i></a>
+						</div>
 					</div>
 				</section>
 
@@ -217,9 +229,12 @@
 
 		<footer id="footer">
 			<div class="inner">
-				<a class="button" target="_blank" href="https://www.2idle.com" style="font-family: Arial,serif;font-size: 24pt;border:none;line-height:1em;min-width:auto;height:auto;padding-top:10px;padding-bottom:10px">
-            				<span style="color:red">2</span>idle<span style="color:red;vertical-align: super;font-size:x-small">(WIP)</span>
-        			</a>
+				<div class="col-12">
+					<a class="button" target="_blank" href="https://www.2idle.com" style="font-family: Arial,serif;font-size: 24pt;border:none;line-height:1em;height:auto;text-align: right;padding: 0;">
+						<span style="color:red">2</span>idle<span style="color:red;vertical-align: super;font-size:x-small">(WIP)</span>
+					</a>
+				</div>
+
 				<ul class="icons">
 					<li><a href="https://www.linkedin.com/in/maochen" class="fa-brands fa-linkedin fa-2x"><span class="label"></span></a></li>
 					<li><a href="http://github.com/maochen" class="fa-brands fa-github-square fa-2x"><span class="label"></span></a></li>

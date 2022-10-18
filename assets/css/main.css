@@ -112,15 +112,8 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		color: #49bf9d;
 		text-decoration: none;
 	}
-
-		a:hover {
-			border-bottom-color: transparent;
-			color: #49bf9d !important;
-			text-decoration: none;
-		}
 
 	strong, b {
 		color: #787878;
@@ -2161,7 +2154,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 2em;
 		padding-left: 1em;
 	}
 
@@ -2185,7 +2178,7 @@ input, select, textarea {
 				}
 
 	dl {
-		margin: 0 0 2em 0;
+		margin: 0 0 2em;
 	}
 
 /* Icons */
